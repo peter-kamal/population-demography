@@ -234,4 +234,4 @@ ggplot(data_elast, aes(x= Ages, y= Elasticity, group = `Vital Rate`, color = `Vi
   # ggtitle("Elasticities for the two populations") +
   facet_wrap(vars(Population))
 
-ggsave("elasticities.png", height = 6, width = 12)
+ggsave("elasticities.png", height = 4, width = 12)
