@@ -235,3 +235,12 @@ ggplot(data_elast, aes(x= Ages, y= Elasticity, group = `Vital Rate`, color = `Vi
   facet_wrap(vars(Population))
 
 ggsave("elasticities.png", height = 4, width = 12)
+
+
+# Quick check of reproductive values for better interpretation
+
+repr_managed <- reproductive.value(transition_managed)
+repr_managed
+
+repr_natural <- reproductive.value(transition_natural)
+repr_natural
